@@ -368,3 +368,6 @@ Explanation: This option will effectively stop X-raying on your server, with a s
 ## What to avoid:
 
 [ClearLagg & other entity clear plugins](https://dev.bukkit.org/projects/clearlagg) - Plugins like these will kill & remove all entities, which will temporarily help with lag, but mobs will spawn back very quickly, and this will also causes additional lag, while the amount of entities will go back up to what it was before.
+
+[Plugman](https://dev.bukkit.org/projects/plugman) - plugins like these will be an alternative to reload, which can seem like a quick and easy way to update plugins or configurations but it can actualy do more damage then its convience: some plugins like discordsrv break on reload or via plugman, some plugins reject support with plugman usage, most plugins have a inbuilt reload feature and reloads of any type even with plugins can cause memory leaks what means your server could end up lagging.
+To garantee everything goes well please: only modify files while the server is an offline state, use reboots instead of restarts or any sort of plugin to prevent isues listed above.
